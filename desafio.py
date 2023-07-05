@@ -19,3 +19,20 @@ for letra in frase_desafio_2:
         
 solucao_desafio_2 = ''.join(lista_letras_desafio_2)
 print(solucao_desafio_2)
+
+# Encontre a substring palindroma mais longa na sring abaixo:
+# A ideia é buscar pelo menos 3 caracteres em toda string e verificar se é uma palavra palindroma, caso não encontre com 3, aumenta para 4 e assim por diante
+
+palavra_desafio_3 = 'babad'
+quantidade_caracteres = len(palavra_desafio_3)
+for i in range(3, quantidade_caracteres, 1):
+    
+    for j in range(0, quantidade_caracteres, 1):
+        teste_palavra_3_caracteres = palavra_desafio_3[j:i]
+        
+        if teste_palavra_3_caracteres == teste_palavra_3_caracteres[::-1]:
+            solucao_desafio_3 = teste_palavra_3_caracteres
+            break
+        
+        i = i+1
+        
