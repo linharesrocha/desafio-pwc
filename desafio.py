@@ -8,3 +8,14 @@ for palavra in frase_desafio_1_split:
     
 solucao_desafio_1 = ' '.join(lista_palavras_desafio_1)
 print(solucao_desafio_1)
+
+# 2. Remova todos os caracteres duplicados da string abaixo:
+frase_desafio_2 = 'Hello, World!'
+lista_letras_desafio_2 = []
+
+for letra in frase_desafio_2:
+    if letra not in lista_letras_desafio_2:
+        lista_letras_desafio_2.append(letra)
+        
+solucao_desafio_2 = ''.join(lista_letras_desafio_2)
+print(solucao_desafio_2)
