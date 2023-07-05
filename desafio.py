@@ -63,3 +63,20 @@ for index, palavra in enumerate(lista_palavras_desafio_4):
         
 solucao_desafio_4 = ' '.join(lista_palavras_desafio_4_solucionada)
 print(solucao_desafio_4)
+
+
+# 5. Verifique se a string é um anagrama de um palíndromo:
+palavra_desafio_5 = 'racecar'
+lista_letras_desafio_5_invertido = []
+
+for letra in palavra_desafio_5:
+    lista_letras_desafio_5_invertido.insert(0, letra)
+
+palavra_invertida_desafio_5 = ''.join(lista_letras_desafio_5_invertido)
+
+if palavra_desafio_5 == palavra_invertida_desafio_5:
+    solucao_desafio_5 = True
+else:
+    solucao_desafio_5 = False
+    
+print(solucao_desafio_5)
