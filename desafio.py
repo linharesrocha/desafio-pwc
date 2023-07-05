@@ -40,3 +40,26 @@ for i in range(3, quantidade_caracteres, 1):
             break
         
         i = i+1
+        
+# 4. Coloque em maiúscula a primeira letra de cada frase na string:
+frase_desafio_4 = "hello. how are you? i'm fine, thank you."
+caracteres_maiusculo = ['.', '?', '!']
+lista_palavras_desafio_4 = frase_desafio_4.split()
+lista_palavras_desafio_4_solucionada = []
+
+
+for index, palavra in enumerate(lista_palavras_desafio_4):
+    if index == 0:
+        lista_palavras_desafio_4_solucionada.append(palavra.capitalize())
+        continue
+    
+    palavra_anterior = lista_palavras_desafio_4[index-1]
+    ultimo_caracter_palavra_anterior = palavra_anterior[-1]
+    
+    if ultimo_caracter_palavra_anterior in caracteres_maiusculo:
+        lista_palavras_desafio_4_solucionada.append(palavra.capitalize())
+    else:
+        lista_palavras_desafio_4_solucionada.append(palavra)
+        
+solucao_desafio_4 = ' '.join(lista_palavras_desafio_4_solucionada)
+print(solucao_desafio_4)
